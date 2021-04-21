@@ -27,9 +27,8 @@ requirements:
     - google-auth-oauthlib
     - requests
     - decorator
-    - fsspec >=0.9.0,<0.10.0
+    - fsspec ==2012.04.0
     - aiohttp
-    - ujson
 
 test:
   imports:
