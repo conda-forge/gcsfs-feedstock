@@ -1,6 +1,6 @@
 {% set name = "gcsfs" %}
-{% set version = "0.8.0" %}
-{% set sha256 = "6ffb81a93dc4075b056dacb5e8a661b75e79dd2e220538afae94768a6b7be3c6" %}
+{% set version = "2021.4.0" %}
+{% set sha256 = "8503b59d7afc98fdddbba67a615010982cf1c737d5c481d67235a47a5fcc043f" %}
 
 package:
   name: {{ name }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
@@ -27,9 +27,8 @@ requirements:
     - google-auth-oauthlib
     - requests
     - decorator
-    - fsspec >=0.9.0,<0.10.0
+    - fsspec ==2021.04.0
     - aiohttp
-    - ujson
 
 test:
   imports:
