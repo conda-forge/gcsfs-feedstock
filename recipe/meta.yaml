@@ -1,6 +1,6 @@
 {% set name = "gcsfs" %}
-{% set version = "2021.6.0" %}
-{% set sha256 = "582e86a6cc0ef9e1ea356a96943e49135b7fffa404bd1abbc711663acbf0895c" %}
+{% set version = "2021.6.1" %}
+{% set sha256 = "ff2b2c9ef1971b72971aa8580173aa840472fe3604d9751ab8918217300fe3d5" %}
 
 package:
   name: {{ name }}
@@ -27,7 +27,7 @@ requirements:
     - google-auth-oauthlib
     - requests
     - decorator
-    - fsspec ==2021.06.0
+    - fsspec ==2021.06.1
     - aiohttp
 
 test:
