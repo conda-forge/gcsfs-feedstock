@@ -25,6 +25,7 @@ requirements:
     - python >=3.6
     - google-auth >=1.2
     - google-auth-oauthlib
+    - google-cloud-storage
     - requests
     - decorator
     - fsspec =={{ version }}
