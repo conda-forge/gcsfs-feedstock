@@ -27,7 +27,7 @@ requirements:
     - google-auth-oauthlib
     - google-cloud-storage
     - requests
-    - decorator
+    - decorator >4.1.2
     - fsspec =={{ version }}
     - aiohttp
 
