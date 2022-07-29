@@ -18,18 +18,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.7
     - google-auth >=1.2
     - google-auth-oauthlib
     - google-cloud-storage >1.40
     - requests
     - decorator >4.1.2
     - fsspec =={{ version }}
-    - aiohttp <4
+    - aiohttp
 
 test:
   imports:
