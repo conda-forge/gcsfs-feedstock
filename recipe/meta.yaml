@@ -1,6 +1,6 @@
 {% set name = "gcsfs" %}
-{% set version = "2022.5.0" %}
-{% set sha256 = "c28bbbc8f3fb29656f2379ffb8b2b888b95f44d9a46d8dc746253598d1493bb9" %}
+{% set version = "2022.7.1" %}
+{% set sha256 = "4119a08473bfdb9c7e7dfa431d04fb9c130fb7e26c9c9d97fb486c0e5b25adfd" %}
 
 package:
   name: {{ name }}
@@ -18,18 +18,18 @@ build:
 
 requirements:
   host:
-    - python >=3.6
+    - python >=3.7
     - pip
 
   run:
-    - python >=3.6
+    - python >=3.7
     - google-auth >=1.2
     - google-auth-oauthlib
     - google-cloud-storage >1.40
     - requests
     - decorator >4.1.2
     - fsspec =={{ version }}
-    - aiohttp <4
+    - aiohttp
 
 test:
   imports:
