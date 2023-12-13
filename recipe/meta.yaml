@@ -28,7 +28,7 @@ requirements:
     - google-cloud-storage >1.40
     - requests
     - decorator >4.1.2
-    - fsspec =={{ version }}
+    - fsspec ==2023.12.2
     - aiohttp
 
 test:
