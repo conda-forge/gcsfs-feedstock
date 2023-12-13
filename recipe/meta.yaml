@@ -1,6 +1,6 @@
 {% set name = "gcsfs" %}
-{% set version = "2023.12.1" %}
-{% set sha256 = "e86cc583fdf879e5ea2f87bab61738d26ec7e8972762a1e6c6ab758b1e1af99c" %}
+{% set version = "2023.12.2.post1" %}
+{% set sha256 = "e38b7e59580a1e490d62d55a47cba33b49a941b01917c3d6f6cfd2563371ab7b" %}
 
 package:
   name: {{ name }}
@@ -28,7 +28,7 @@ requirements:
     - google-cloud-storage >1.40
     - requests
     - decorator >4.1.2
-    - fsspec =={{ version }}
+    - fsspec ==2023.12.2
     - aiohttp
 
 test:
