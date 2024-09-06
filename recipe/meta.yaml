@@ -1,5 +1,5 @@
 {% set name = "gcsfs" %}
-{% set version = "2024.9.0.post1" %}
+{% set version = "2024.9.0" %}
 {% set sha256 = "7ca70ee9d7c7dbce1a3e36b4883e14102c2d7b4284f49e242843a437bc684684" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.post1.tar.gz
   sha256: {{ sha256 }}
 
 build:
