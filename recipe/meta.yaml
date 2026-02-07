@@ -1,6 +1,6 @@
 {% set name = "gcsfs" %}
-{% set version = "2026.1.0" %}
-{% set sha256 = "ce76686bcab4ac21dd60e3d4dc5ae920046ee081f1fbcecebeabe65c257982c8" %}
+{% set version = "2026.2.0" %}
+{% set sha256 = "d58a885d9e9c6227742b86da419c7a458e1f33c1de016e826ea2909f6338ed84" %}
 
 package:
   name: {{ name }}
@@ -26,7 +26,7 @@ requirements:
     - python >={{ python_min }}
     - google-auth >=1.2
     - google-auth-oauthlib
-    - google-cloud-storage >1.40
+    - google-cloud-storage >=3.9.0
     - google-cloud-storage-control
     - requests
     - decorator >4.1.2
