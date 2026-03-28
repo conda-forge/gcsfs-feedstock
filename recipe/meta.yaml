@@ -1,6 +1,6 @@
 {% set name = "gcsfs" %}
-{% set version = "2026.2.0" %}
-{% set sha256 = "d58a885d9e9c6227742b86da419c7a458e1f33c1de016e826ea2909f6338ed84" %}
+{% set version = "2026.3.0" %}
+{% set sha256 = "20008b3c0a7ba9453fff1208dc412ee1c9106efa61a0f8abf500fc7b562ec7de" %}
 
 package:
   name: {{ name }}
@@ -31,7 +31,7 @@ requirements:
     - requests
     - decorator >4.1.2
     - fsspec =={{ version }}
-    - aiohttp
+    - aiohttp >=3.9.0
 
 test:
   imports:
