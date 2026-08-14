@@ -1,6 +1,6 @@
 {% set name = "gcsfs" %}
-{% set version = "2026.7.0" %}
-{% set sha256 = "2df36ce1e9010e76dc4295774030495a97496838483c619e9f63bc0ab7bdc770" %}
+{% set version = "2026.8.0" %}
+{% set sha256 = "c2a7c0ffee2d0837243b4f838efaa185c152a4eb4cc529e41b3569bf00b9781e" %}
 
 package:
   name: {{ name }}
@@ -8,7 +8,7 @@ package:
 
 source:
   fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
